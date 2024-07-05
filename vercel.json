@@ -1,6 +1,8 @@
+
 {
-  "routes": [{ "src": "/(.*)", "dest": "http://13.124.106.169:8080/$1" }],
-  "env": {
-    "VERCEL_ENV": "development"
-  }
+  "rewrites":[
+    {
+      "source": "/api/(.*)",
+      "destination": "http://13.124.106.169:8080/$1"}
+  ]
 }
